@@ -1,0 +1,32 @@
+def "start fib seq"
+    prt "Where do you want to start the fibonacci sequence?"
+    inp [j]
+    prt "How many numbers do you want?"
+    input [end]
+    sub [toend] [j] 1
+    inc [toend] [end]
+    prt "Starting at " [j] " and ending at " [toend]
+    inc [toend] -1
+
+    var [i] 1
+    var [v1] 0
+    var [v2] 1
+
+    cal "fib print"
+    jgt "rtn" [i] [toend]
+    jgt "rtn" [v1] 1e308
+    cal "fib"
+    stp -4
+rtn
+
+def "fib"
+    add [v3] [v2] [v1]
+    var [v1] [v2]
+    var [v2] [v3]
+    inc [i] 1
+rtn
+
+def "fib print"
+    jlt "rtn" [i] [j]
+    prt "fib num " [i] " is " [v1]"
+rtn

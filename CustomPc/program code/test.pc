@@ -1,0 +1,29 @@
+def "main test"
+    prt "Hello World!"
+
+    /// this is a comment
+
+    /// empty \n will auto be removed :D
+
+    var [var1] "hi there"
+    prt "stored var: {" [var1] "} cool?"
+    var [n1] 1
+    var [n2] 5
+    add [res] [n1] [n2]
+    prt "the result of " [n1] " + " [n2] " is " [res]
+    cal "test stepping"
+    stp 8
+    sub [sub] [res] 10
+    prt "and " [res] " - 10 is " [sub]
+    prt "please input something"
+    inp [uin]
+    prt "you input " [uin]
+    prt "actual fin"
+    rtn
+    prt "fin"
+    stp -8
+rtn
+
+def "test stepping"
+    prt "the interpretor knows how to do functions/methods now :D"
+rtn
