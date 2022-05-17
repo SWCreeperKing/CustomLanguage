@@ -2,7 +2,7 @@ def "start fib seq"
     prt "Where do you want to start the fibonacci sequence?"
     inp [j]
     prt "How many numbers do you want?"
-    input [end]
+    inp [end]
     sub [toend] [j] 1
     inc [toend] [end]
     prt "Starting at " [j] " and ending at " [toend]
