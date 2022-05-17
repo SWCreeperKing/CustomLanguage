@@ -1,3 +1,0 @@
-def "testing"
-    prt "calling another file works, but only for methods atm"
-rtn

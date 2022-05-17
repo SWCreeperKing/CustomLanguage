@@ -1,9 +1,0 @@
-req "new file"
-req "fib"
-req "test"
-
-prt "starting from the main dir"
-prt "starting the fib program!"
-cal "start fib seq"
-prt "\n\ntime to run the starting test!\n\n"
-cal "main test"
